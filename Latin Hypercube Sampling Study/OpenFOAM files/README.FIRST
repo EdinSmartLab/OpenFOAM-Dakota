@@ -1,0 +1,14 @@
+#Step 1: Open OpenFOAM case directory
+cd /OpenFOAM/Workspace/Case/Directory
+
+#Step 2: Clean OpenFOAM case directory, this step is optional
+foamCleanTutorials
+
+#Step 3: Generate mesh
+blockMesh 
+
+#Step 4: Run OpenFOAM case
+icoFoam > log | tail –f log
+
+#Step 5: Extract results for the last time step
+postProcess -func sampleDict -latestTime
