@@ -8,7 +8,8 @@ If you use this program, please cite this repository -- Sandip, A. 2019, OpenFOA
 
 About: This program is maintained by Anjali Sandip.
 
-Sandia Dakota version 6.10
-OpenFOAM versions 4, 5 and 6
-Operating system: Linux
+ - Sandia Dakota version 6.10
+ - OpenFOAM versions 4, 5 and 6
+ - Operating system: Linux
+
 If you have questions/would like to collaborate/find this software helpful, feel free to contact me at asandip785@gmail.com
