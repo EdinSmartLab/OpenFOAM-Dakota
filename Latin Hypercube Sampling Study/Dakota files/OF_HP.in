@@ -1,0 +1,36 @@
+environment
+#Store maximum velocity at the outlet of the cylinder in tabular data file 
+  tabular_data
+      tabular_data_file = 'Umax.dat'
+             
+method
+#Define data analysis -- sampling study
+  sampling 
+    sample_type lhs                #lhs --latin hypercube sampling
+    samples 400
+    seed 1987
+     
+variables  
+#Define input parameter/s
+normal_uncertain 2                #uncertain input parameters follow normal distribution
+      descriptors 'l' 'r'         #uncertain input parameters -- length (m) and radius (m) of the cylinder
+      means 10  0.5
+      std_deviations 0.04  0.02
+
+responses
+#Define output parameter -- Maximum velocity at the outlet of the cylinder at the last time step
+  response_functions 1
+  descriptors 'Umax_at_outlet'
+  no_gradients
+  no_hessians
+  
+  
+interface
+#Define Dakota - OpenFOAM interface
+  analysis_drivers 'od_HP_driver.sh'                                    #Calls the bash script that interfaces Dakota with OpenFOAM                       
+    fork                                                                #Simulation interface type
+	 parameters_file='params.in'                                        #Dakota parameters file
+     results_file='/Dakota/Gui/Workpsace/Dakota/Project/results.out'    #Dakota results file
+     file_save                                                          #Saves the parameter and results files     
+     file_tag                                                           #Tags the saved parameter and results files -- params.in.1, params.in.2, results.out.2, results,out.2, etc.
+
