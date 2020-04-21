@@ -1,6 +1,6 @@
 This program, OpenFOAM-Dakota interface, is released under license GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007.
 
-A generic interface script (shell) for coupling OpenFOAM and Dakota along with examples have been provided.
+A generic interface script (bash) for coupling OpenFOAM and Dakota along with examples have been provided.
 
 Capabilities: This program integrates the capabilities of OpenFOAM and Sandia Dakota. It provides a framework for multi-physics/phase simulations, uncertainty quantification, optimization and parameter studies.
 
