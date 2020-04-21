@@ -4,7 +4,7 @@ A generic interface script (shell) for coupling OpenFOAM and Dakota along with e
 
 Capabilities: This program integrates the capabilities of OpenFOAM and Sandia Dakota. It provides a framework for multi-physics/phase simulations, uncertainty quantification and optimization.
 
-If you use this program, please cite this repository -- Sandip, A. 2019, OpenFOAM-Dakota, v1.0, Zenodo, DOI: 10.5281/zenodo.3679502
+If you use this program, please cite this repository -- Sandip, A. 2019, OpenFOAM-Dakota, v1.0, Zenodo, DOI: 10.5281/zenodo.3758768
 
 About: This program is maintained by Anjali Sandip.
 
