@@ -1,3 +1,5 @@
+#Steps to run OpenFOAM case through terminal
+
 #Step 1: Open OpenFOAM case directory
 cd /OpenFOAM/Workspace/Case/Directory
 
