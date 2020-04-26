@@ -12,4 +12,4 @@ About: This program is maintained by Anjali Sandip.
  - OpenFOAM versions 4, 5 and 6
  - Operating system: Linux
 
-If you have questions/find this software helpful/would like to collaborate, you can reach me at asandip785@gmail.com
+If you have questions/find this software helpful/would like to collaborate, you can reach me at anjali.sandip@und.edu
